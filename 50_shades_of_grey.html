@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.js"></script>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .shade {
+        font: 14px/1.4 Consolas, Monaco, monospace;
+        padding: 10px;
+        background: pink;
+    }
+    </style>
+</head>
+
+<body>
+    <script>
+    const $body = $('body');
+
+    for (let i = 1; i <= 50; i++) {
+        $('<div>', {
+            class: 'shade',
+            html: `Оттенок №${i}`
+        }).appendTo($body);
+    }
+
+    // Ваш код тут...
+
+    </script>
+</body>
+
+</html>
